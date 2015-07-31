@@ -29,6 +29,12 @@ describe('Merge Function', function(){
 
 describe('Split Function', function(){
   it('is able to split one array into two roughly equal halves', function(){
-    expect(split([3,4,5,2,1]).toEqual([[3,4],[5,2,1]]));
+    expect(split([3,4,5,2,1])).toEqual([[3,4,5],[2,1]]);
+  })
+})
+
+describe('mergeSort Function', function(){
+  it('it should be able to sort an arary', function(){
+    expect(mergeSort([2,1])).toEqual([1,2]);
   })
 })
